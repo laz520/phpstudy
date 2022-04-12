@@ -11,4 +11,8 @@ $conn = new mysqli($servername  ,$username , $pass ,$db);
 if($conn ->connect_errno){
     die("连接失败！" .$conn->connect_error);
 }
-
+//
+////获取登陆的SESSION信息和数据库的name对比1
+//$sqla = "SELECT * FROM admin WHERE user='" . $_SESSION['user'] . "'";
+//$resulta = $conn->query($sqla);
+//$rowa = mysqli_fetch_assoc($resulta);

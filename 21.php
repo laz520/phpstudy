@@ -35,6 +35,7 @@ if (isset($user) &&  isset($pass)){
             setcookie('code', md5($user . $pass), time() + 7 * 24 * 60 * 60);
             setcookie('name', $user, time() + 7 * 24 * 60 * 60);
             setcookie('code', md5($user . $pass), time() + 7 * 24 * 60 * 60);
+
         }}else{
 
             echo "<script>alert('密码错误呢')</script>";
@@ -42,7 +43,8 @@ if (isset($user) &&  isset($pass)){
     }
 
 }else{
-
+    // 没有勾选则删除Cookie
+    setcookie('user', '', time()-999);
     echo "<script>alert('你还没有输入账号和密码呢！')
 window.location.assign('20.php');
 </script>";
