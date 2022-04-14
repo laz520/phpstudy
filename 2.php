@@ -1,3 +1,6 @@
 <?php
-$arr =array('arr' , 'cccc' ,'cxxxx');
-print_r($arr);
+session_start(); //创建session
+session_unset();//删除session
+echo "<script>alert('登出成功 ')
+window.location.href = '25.php'
+</script>";
