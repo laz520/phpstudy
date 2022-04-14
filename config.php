@@ -1,4 +1,5 @@
 <?php
+
 $servername =  "localhost";//服务器地址
 $username = "root" ;//数据库用户名
 $pass = "root";//数据库密码
@@ -16,3 +17,4 @@ if($conn ->connect_errno){
 //$sqla = "SELECT * FROM admin WHERE user='" . $_SESSION['user'] . "'";
 //$resulta = $conn->query($sqla);
 //$rowa = mysqli_fetch_assoc($resulta);
+
