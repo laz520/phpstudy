@@ -1,7 +1,7 @@
 <?php
 //随机变换颜色函数
 function color($length = 6){
-    $x = '0123456789ABCDEF';
+    $x = '0123456DEF';
     $a = strlen($x);
     $v = '';
     for ($i = 0;$i<$length;$i++){
