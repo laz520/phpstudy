@@ -15,9 +15,9 @@ if($conn ->connect_errno){
 //
 //////获取登陆的SESSION信息和数据库的name对比1
 
-function sjk(){
-    $sql = "SELECT  `user`, `pass` FROM admin ";
-$result = $conn->query($sql);
-$row = mysqli_fetch_assoc($result);
 
-}
+
+    $sql = "SELECT * FROM `admin` WHERE 'user' = $user";
+$resulet  = $conn->query($sql);
+
+
