@@ -1,9 +1,3 @@
 <?php
-include ("config.php");
-$c = "a";
-$user  = hasname($_POST['n']);
-if ($user){
-    echo "yes";
-}else{
-    echo "no";
-}
+$pass ='laz123';
+echo  md5($pass);
