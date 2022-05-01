@@ -20,4 +20,8 @@ if($conn ->connect_errno){
     $sql = "SELECT * FROM `admin` WHERE 'user' = $user";
 $resulet  = $conn->query($sql);
 
+ $sx = " select * from  admin order by rand() limit 1";
+ $re  = $conn->query($sx);
+ $row = $re->fetch_assoc();
+ echo  $row['id'];
 
