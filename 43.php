@@ -65,11 +65,18 @@ $count = 1;
 //写入数据
 file_put_contents('record.txt', $write, FILE_APPEND);
 $a = 5 - $clickcount;
-//输出信息
-if ($clickcount > 5) {
-echo "你已经超过五次抽取漂流瓶了！等待明天吧！ ";
-} else {
-echo "今天还可以抽取{$a}";
+
+$sj = date("G:i:s");
+echo $sj;
+$c = ("23:59:59");
+if ($c>$sj){
+    if ($clickcount>5){
+       echo "今天已经抽取了！";
+    }else{
+        echo "{$a}";
+    }
 }
+
 echo "<br>";
 echo "您是第{$clickcount}次来访问该网页<br/>";
+1
