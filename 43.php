@@ -79,4 +79,4 @@ if ($c>$sj){
 
 echo "<br>";
 echo "您是第{$clickcount}次来访问该网页<br/>";
-1
+1213
